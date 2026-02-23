@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captcha form in HTML</title>
+</head>
+<body>
+    <h1 translate="no">Captcha Form</h1>
+    <form>
+        <label for="captcha">Enter Captcha: <span style="color: red;">*</span></label>
+        <input type="text" id="captcha" name="Captcha" required placeholder="Enter captcha here" title="enter only aplha & digits">
+        <br> <br>
+        
+        <label for="un">Username:</label>
+        <input type="text" id="un" name="Username">
+        <br> <br>
+
+        <label for="email">Enter Email:</label>
+        <input type="email" id="email" name="email">
+        <br> <br>
+
+        <label for="password">Enter Password:</label>
+        <input type="password">
+        <br> <br>
+
+        <label>Enter Mobile Number:</label>
+        <input type="tel">
+        <br> <br>
+
+        <label>Enter Age:</label>
+        <input type="number" min="1" max="100">
+        <br> <br>
+        <button type="submit">Submit</button>
+        <input type="reset" value="cancel">
+    </form>
+</body>
+</html>

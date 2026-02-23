@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select, Textarea, Fieldset and Legend forms in HTML</title>
+</head>
+<body>
+    <h1>Select, Textarea, Fieldset and Legend forms in HTML</h1>
+    <form>
+        <fieldset>
+            <legend>Fruit details</legend>
+        <label for="fruit">Select a fruit:</label>
+        <Select id="fruits" name="fruits">
+            <option value="Apple">Apple</option>
+            <option value="Mango">Mango</option>
+            <option value="Orange">Orange</option>
+        </Select>   
+        </fieldset>     
+        <br>  <br>
+
+
+        <fieldset>
+            <legend>Feedback</legend>
+        <label for="feedback">Enter feedback: </label>
+        <textarea id="feedback" rows="5" cols="50" name="comment" placeholder="feedback here"></textarea>
+        </fieldset>
+        <br>  <br>
+
+
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname">
+            <br><br>
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname">
+            <br><br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Contact Details</legend>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <br><br>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone">
+            <br><br>
+        </fieldset>
+
+        <br> <br>
+        <button type="submit">Submit</button>
+        <input type="reset" value="cancel">
+    </form>
+</body>
+</html>

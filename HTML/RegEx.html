@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regular Expression in HTML</title>
+</head>
+<body>
+    <form>
+        <!-- Validate Name
+        1. only alphabets with min2 & max 50 "^[A-Za-z]{2,50}$
+        2. only alphabets with min 2 & max 50 with first letter caps "^[A-Z]{1}[a-z]{1,49}$
+        3. Firstname + lastname only alphabets with min 2 & max 50 with first letter caps -->
+
+        <label for="name">Enter name:</label>
+        <input type="text" id="name" pattern="^[A-Z]{1}[a-z]{1,49}$" name="username">
+        <br> <br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

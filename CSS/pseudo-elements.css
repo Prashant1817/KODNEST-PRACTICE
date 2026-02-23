@@ -1,0 +1,41 @@
+/* ::before */
+.heading::before {
+    content: "★ ";
+    color: red;
+}
+
+/* ::after */
+.heading::after {
+    content: " ✔";
+    color: green;
+}
+
+/* ::first-line */
+.text::first-line {
+    color: blue;
+    font-weight: bold;
+}
+
+/* ::first-letter */
+.text::first-letter {
+    font-size: 40px;
+    color: orange;
+}
+
+/* ::placeholder */
+input::placeholder {
+    color: gray;
+    font-style: italic;
+}
+
+/* ::selection */
+p::selection {
+    background-color: yellow;
+    color: black;
+}
+
+/* ::marker */
+li::marker {
+    color: purple;
+    font-size: 18px;
+}

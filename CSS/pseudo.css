@@ -1,0 +1,74 @@
+/* :hover */
+a:hover {
+    color: red;
+}
+
+/* :active */
+a:active {
+    color: green;
+}
+
+/* :focus */
+input:focus {
+    border: 2px solid blue;
+}
+
+/* :visited */
+a:visited {
+    color: purple;
+}
+
+/* :nth-child */
+li:nth-child(2) {
+    color: orange;
+}
+
+/* :first-child */
+li:first-child {
+    font-weight: bold;
+}
+
+/* :last-child */
+li:last-child {
+    color: green;
+}
+
+/* :nth-of-type */
+div p:nth-of-type(2) {
+    background-color: lightyellow;
+}
+
+/* :only-child */
+.single p:only-child {
+    color: red;
+}
+
+/* :checked */
+input:checked {
+    accent-color: green;
+}
+
+/* :disabled */
+input:disabled {
+    background-color: lightgray;
+}
+
+/* :enabled */
+input:enabled {
+    border: 1px solid black;
+}
+
+/* :not() */
+p:not(.special) {
+    color: blue;
+}
+
+/* :nth-last-child */
+li:nth-last-child(1) {
+    background-color: lightblue;
+}
+
+/* :nth-last-of-type */
+li:nth-last-of-type(2) {
+    text-decoration: underline;
+}

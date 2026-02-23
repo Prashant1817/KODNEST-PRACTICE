@@ -1,0 +1,28 @@
+.container {
+    background-color: orangered;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
+    /* row-gap: 30px;
+    column-gap: 10px; */
+    gap: 30px 10px;
+    /* justify-content: space-evenly; */
+}
+
+.container div {
+    background-color:chartreuse;
+    border: 2px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+.item1 {
+    /* grid-column-start: 1;
+    grid-column-end: 4; */
+    grid-column: 1 / 4;
+}
+
+.item3 {
+    grid-row: 2 / 4;
+}

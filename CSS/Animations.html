@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        body {
+            background-color: red;
+            animation-name: myAnimations;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-delay: 3s;
+        }
+
+        .h1 {
+            animation-name: fadeOut;
+            animation-duration: 15s;
+
+        }
+
+        @keyframes myAnimations {
+            0%{background-color: blue;}
+            20%{background-color: yellow;}
+            40%{background-color: green;}
+            60%{background-color: pink;}
+            80%{background-color: black;}
+            100%{background-color: white;}
+            /* from{background-color: red;}
+            to{background-color: yellow;} */
+        }
+
+        @keyframes fadeIn {
+            0%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeOut {
+            0%{
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Animations in CSS</h1>
+    <hr>
+    <div>Anime</div>
+</body>
+</html>

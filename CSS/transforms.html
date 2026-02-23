@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform in CSS</title>
+    <link rel="icon" href="/Media/favicon.png" type="favicon/png">
+    <style>
+        .a {
+            width: 150px;
+            height: 100px;
+            background-color: aqua;
+            border: 2px solid black;
+            text-align: center;
+            padding: 30px;
+            /* transform: translate(100%, 100%); */
+            /* transform: translate(0,100px); */
+            /* transform: translate(-100px, 100px); */
+            transform: translate(100px, 0);
+
+        }
+
+        .a:hover {
+            /* transform: scale(10); */
+            /* transform: rotate(267deg); */
+            /* transform: skew(20deg, 10deg); */
+            transform-origin: bottom right;
+            transform: rotate(45deg);
+        }
+        img {
+  width: 250px;
+
+
+  /* Hide initially */
+  opacity: 0;
+  transform: translateX(1400px);
+
+
+  /* Animate after load */
+  animation: slideRightToLeft 10s ease-out forwards;
+  animation-delay: 3s;
+}
+
+
+@keyframes slideRightToLeft {
+  from {
+    transform: translateX(1400px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+    </style>
+</head>
+<body>
+    <div class="a">Hello</div>
+    <img src="/Media/favicon.png" alt="image">
+
+</body>
+</html>
